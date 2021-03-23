@@ -8,6 +8,7 @@ body {
 }
 
 body {
+  font-family: monospace;
   height: 100vh;
   width: 100vw;
 }
@@ -20,8 +21,64 @@ body {
   width: 100%;
 }
 
+/* calculator container  */
 .calculator {
+  background-color: black;
   border: solid black;
+  display: flex;
+  flex-direction: column;
   height: 600px;
   width: 400px;
+}
+
+/* rows in the calculator  */
+.row {
+  display: flex;
+  flex: 1;
+  height: 50px;
+  justify-content: space-between;
+}
+
+/* calculator display  */
+.display {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  font-size: 4em;
+  justify-content: flex-end;
+  padding-right: 0.2em;
+}
+
+/* clear default button styling */
+button {
+	border: none;
+  cursor: pointer;
+  outline: none;
+	padding: 0;
+}
+
+.clear-button {
+  min-width: 49.7%;
+}
+
+.backspace-button {
+  min-width: 24.5%
+}
+
+/* buttons in the last column */
+button:last-child {
+  background-color: hsla(31, 70%, 59%, 1);
+  width: 24.5%;
+
+}
+
+.button-content {
+  font-size: 2.3em;
+}
+
+/* buttons with 24.5% width */
+.button {
+  width: 24.5%;
+  margin-top: 0.65%;
 }
