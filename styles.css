@@ -24,18 +24,18 @@ body {
 /* calculator container  */
 .calculator {
   background-color: black;
-  border: solid black;
+  border: 0.01px solid black;
   display: flex;
   flex-direction: column;
   height: 600px;
+  justify-content: space-between;
   width: 400px;
 }
 
 /* rows in the calculator  */
 .row {
   display: flex;
-  flex: 1;
-  height: 50px;
+  height: 16.39%;
   justify-content: space-between;
 }
 
@@ -52,25 +52,30 @@ body {
 
 /* clear default button styling */
 button {
-	border: none;
+  border: none;
   cursor: pointer;
   outline: none;
-	padding: 0;
+  padding: 0;
+}
+
+/* button hover state */
+button:focus,
+button:hover {
+  filter: brightness(90%);
 }
 
 .clear-button {
-  min-width: 49.7%;
+  flex: 0 1 49.7%;
 }
 
 .backspace-button {
-  min-width: 24.5%
+  flex: 0 1 24.5%;
 }
 
 /* buttons in the last column */
 button:last-child {
   background-color: hsla(31, 70%, 59%, 1);
-  width: 24.5%;
-
+  flex: 0 1 24.6%;
 }
 
 .button-content {
@@ -79,6 +84,10 @@ button:last-child {
 
 /* buttons with 24.5% width */
 .button {
-  width: 24.5%;
-  margin-top: 0.65%;
+  flex: 0 1 24.5%;
+}
+
+/* the zero button */
+.zero-button {
+  flex: 0 1 74.85%;
 }
