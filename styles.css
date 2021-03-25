@@ -59,7 +59,6 @@ button {
 }
 
 /* button hover state */
-button:focus,
 button:hover {
   filter: brightness(75%) saturate(120%);
 }
