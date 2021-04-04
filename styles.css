@@ -52,9 +52,13 @@ body {
 
 /* clear default button styling */
 button {
+  background-color: hsl(0, 0%, 94%);
   border: none;
+  color: black;
   cursor: pointer;
+  margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 /* button hover state */
