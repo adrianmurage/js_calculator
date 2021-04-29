@@ -54,8 +54,8 @@ body {
 button {
   background-color: hsl(0, 0%, 94%);
   border: none;
-  color: black;
   cursor: pointer;
+  font-size: 2.3em;
   margin: 0;
   padding: 0;
   text-decoration: none;

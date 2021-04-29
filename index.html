@@ -1,81 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>JS Calculator</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="calculator">
-        <div class="row display">
-          <span id="result"> 0 </span>
-        </div>
-        <div class="row">
-          <button class="clear-button">
-            <span class="button-content"> C </span>
-          </button>
-          <button class="backspace-button">
-            <span class="button-content"> &larr; </span>
-          </button>
-          <button>
-            <span class="button-content"> &divide; </span>
-          </button>
-        </div>
-        <div class="row">
-          <button class="button">
-            <span class="button-content"> 7</span>
-          </button>
-          <button class="button">
-            <span class="button-content"> 8</span>
-          </button>
-          <button class="button">
-            <span class="button-content"> 9</span>
-          </button>
-          <button>
-            <span class="button-content"> &times;</span>
-          </button>
-        </div>
-        <div class="row">
-          <button class="button">
-            <span class="button-content"> 6</span>
-          </button>
-          <button class="button">
-            <span class="button-content"> 5</span>
-          </button>
-          <button class="button">
-            <span class="button-content"> 4</span>
-          </button>
-          <button>
-            <span class="button-content"> &minus;</span>
-          </button>
-        </div>
-        <div class="row">
-          <button class="button">
-            <span class="button-content"> 3</span>
-          </button>
-          <button class="button">
-            <span class="button-content"> 2</span>
-          </button>
-          <button class="button">
-            <span class="button-content"> 1</span>
-          </button>
-          <button>
-            <span class="button-content"> &plus;</span>
-          </button>
-        </div>
-        <div class="row">
-          <button class="zero-button">
-            <span class="button-content"> 0</span>
-          </button>
-          <button>
-            <span class="button-content"> &equals;</span>
-          </button>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>JS Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="calculator">
+      <div class="row display">
+        0
+      </div>
+      <div class="row">
+        <button class="clear-button">
+          C
+        </button>
+        <button class="backspace-button">
+          &larr;
+        </button>
+        <button>
+          &divide;
+        </button>
+      </div>
+      <div class="row">
+        <button class="button number">
+          7
+        </button>
+        <button class="button number">
+          8
+        </button>
+        <button class="button number">
+          9
+        </button>
+        <button>
+          &times;
+        </button>
+      </div>
+      <div class="row">
+        <button class="button number">
+          6
+        </button>
+        <button class="button number">
+          5
+        </button>
+        <button class="button number">
+          4
+        </button>
+        <button>
+          &minus;
+        </button>
+      </div>
+      <div class="row">
+        <button class="button number">
+          3
+        </button>
+        <button class="button number">
+          2
+        </button>
+        <button class="button number">
+          1
+        </button>
+        <button>
+          &plus;
+        </button>
+      </div>
+      <div class="row">
+        <button class="zero-button number">
+          0
+        </button>
+        <button>
+          &equals;
+        </button>
       </div>
     </div>
-    <script src="./index.js"></script>
-  </body>
+  </div>
+  <script src="./index.js"></script>
+</body>
 </html>
